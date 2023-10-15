@@ -1,5 +1,6 @@
+const path = require('path');
 function getMessage (req,res)  {
-    res.send("Hi BUddy");
+    res.sendFile(path.join(__dirname,'..','public','image', 'photo.jpg'));
 }
 function postMessage (req,res)  {
     res.send('Updating messages...');
