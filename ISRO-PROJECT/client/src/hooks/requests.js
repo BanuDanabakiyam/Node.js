@@ -1,4 +1,8 @@
+const API_URL = 'http://localhost:8000';
 async function httpGetPlanets() {
+   const response  =  await fetch(`${API_URL}/planets`);
+  //  This is a template literal, denoted by backticks (``), which allows you to insert a variable's value into a string using ${}.
+    return await response.json();
   // TODO: Once API is ready.
   // Load planets and return as JSON.
 }
